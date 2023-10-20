@@ -171,6 +171,7 @@ class MainActivity : AppCompatActivity() {
         return (totalBrightness / (height * width * 3)).toInt()
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     private fun filters() {
         lastJob?.cancel()
 
